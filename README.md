@@ -1,6 +1,6 @@
 # prediGT
 
-Pipeline for Genome-Wide Association Study (GWAS) and Transcriptome-Wide association Study (TWAS) analyses. 
+Pipeline for Genome-Wide Association Study (GWAS) and Transcriptome-Wide Association Study (TWAS) analyses. 
 
 ## HOW IT WORKS
 prediGT is divided into two modules. 
