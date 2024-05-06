@@ -1,0 +1,22 @@
+name: snakemake
+channels:
+	- bioconda
+	- conda-forge
+	- anaconda
+dependencies:
+	- python=3.7
+	- pandas
+	- snakemake
+	- sqlite=3.40
+	- argparse
+	- scipy=1.4
+	- r-base
+	- plink2
+	- bgen_reader=3.0.2
+	- cyvcf2=0.20.0
+	- pyliftover=0.4
+	- statsmodels=0.11.1
+	- h5py=2.10.0
+	- pyarrow=0.11.0
+	- r-qqman
+	- r-dplyr

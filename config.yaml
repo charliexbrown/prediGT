@@ -1,0 +1,7 @@
+bfile_path: "/path/to/input/bfiles/directory" 
+working_dir: "/path/to/output/directory"
+metaxcan_dir: "/path/to/MetaXcan/software"
+pheno_file: "/path/to/phenotype/file"
+covar_file: "/path/to/covariates/file" ## if no covariates are included in GWAS analysis set this argument to 'null'
+sig_pval: "10e-7" ## threshold of significance for filtering GWAS results
+glm_type: "glm.logistic" ##glm.logistic for binary (eg case/control) phenotype, glm.linear for quantitative phenotype
