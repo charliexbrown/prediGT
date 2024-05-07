@@ -27,7 +27,7 @@ Second, it investigates the association between genetically regulated gene expre
 
 2. run:
 ```
-snakemake -s Snakemake --configfile config.yaml 
+snakemake -s Snakemake 
 ```
 
 Notes:
