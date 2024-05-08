@@ -142,7 +142,7 @@ rule sig_snps:
     params:
         sig_gwas=sig_gwas
     shell:
-       "awk -F '\t' '$13<{params.sig_gwas} {{print $3}}' {input} > {output}"
+       "awk -F '\t' '$12<{params.sig_gwas} {{print $3}}' {input} > {output}"
 
 
 ##########################################
