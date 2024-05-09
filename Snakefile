@@ -133,7 +133,7 @@ rule plot_gwas:
         """
 
 
-# Extract significant snps in gwas. Used later when retrieving significant variants associated with significant association from spredixcan
+# Extract significant snps in gwas based on p-value threshold and OR>1. Used later when retrieving significant variants associated with significant association from spredixcan
 rule sig_snps:
     input:
         "{w_dir}/{phenotype}/gwas_results/{phenotype}_gwas.txt"
@@ -142,7 +142,7 @@ rule sig_snps:
     params:
         sig_gwas=sig_gwas
     shell:
-       "awk -F '\t' '{{if ($12 && $12<{params.sig_gwas}) print $3}}' {input} > {output}"
+       "awk -F '\t' '{{if ($12 && $12<{params.sig_gwas} && $9>1) print $3}}' {input} > {output}" 
 
 
 ##########################################
